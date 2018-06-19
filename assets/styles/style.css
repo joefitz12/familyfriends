@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Soap;
+    src: url(fonts/soap.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+}
+
+.nav {
+    /* display: grid; */
+    height: 100vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    overflow: scroll;
+    position: relative;
+    margin-top: 0;
+}
+
+.nav__search > input {
+    width: 20vw;
+    background-color: black;
+    border: transparent;
+    color: white;
+    position: fixed;
+    padding-bottom: 5px;
+}
+
+.nav__videos {
+    margin-top: 10px;
+    overflow: scroll;
+}
+
+.nav__videos > .video__container > .video__title > h4 {
+    color: white;
+    font-family: 'Soap';
+    margin-bottom: 0;
+}
+
+.nav__videos > .video__container > .video__thumbnail {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    align-content: center;
+    grid-column-start: 2;
+    grid-column-end: 9;
+}
+
+.main > .main__title {
+    /* display: grid; */
+    grid-column-start: 3;
+    grid-column-end: 8;
+}
+
+.main__title > h1 {
+    font-family: 'Soap';
+    color: white;
+    text-align: center;
+    font-size: 15vh
+}
+
