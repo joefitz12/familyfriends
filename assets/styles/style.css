@@ -36,7 +36,7 @@ body {
     overflow: scroll;
 }
 
-.nav__videos > .video__container > .video__title > h4 {
+.nav__videos > .video__container > .video__title > h5 {
     color: white;
     font-family: 'Soap';
     margin-bottom: 0;
@@ -47,6 +47,10 @@ body {
     height: 150px;
     background-size: cover;
     background-position: center center;
+}
+
+.nav__videos > .video__container > .video__thumbnail:hover {
+    cursor: pointer;
 }
 
 .main {
@@ -67,6 +71,7 @@ body {
     font-family: 'Soap';
     color: white;
     text-align: center;
-    font-size: 15vh
+    font-size: 15vh;
+    z-index: -1;
 }
 
